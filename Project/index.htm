@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+	Name: Christina Tatang
+	ID: 30003663
+	DoB: 02/08/2000
+	Web Programming - Project 
+	-->
+
+<head>
+<title>Index Page</title>
+<!-- reference css file-->
+<link rel = "stylesheet" type="text/css" href="Project.css"/>
+<meta charset ="utf-8"/>
+</head>
+
+<!-- page title-->
+<h1>Welcome to my Movies Rental page</h1>
+<div id = "menu">
+  <ul>
+    <!--reference for sub page -->
+    <li><a href="http://localhost/Project/index.htm">
+      <table>
+        <tr>
+          <td>Home</td>
+        </tr>
+      </table>
+		  </a></li>
+    <li><a href="http://localhost/Project/myAbout.htm">
+      <table>
+        <tr>
+          <td>About</td>
+        </tr>
+      </table>
+      </a></li>
+    <li><a href="http://localhost/Project/myContact.htm">
+      <table>
+        <tr>
+          <td>Contact</td>
+        </tr>
+      </table>
+      </a></li>
+    <li><a href="http://localhost/Project/myHelp.htm">
+      <table>
+        <tr>
+          <td>Help</td>
+        </tr>
+      </table>
+      </a>
+	  </li>
+  </ul>
+</div>
+
+    <!--search, show all, and frequent search -->
+	<body>
+<div style = "width: 700px;">
+	<div style = "float: left; width: 400px; position: relative; margin-left: 20px; ">
+	  <h2>
+	      <!--search -->
+	  <form action="http://localhost/Project/Search.php" method="post">
+		Click here to add new user <br/>
+		Type in a movie detail:
+		<input type="text" name="Search" />
+		<br>
+		Type in genre detail:
+		<input type="text" name="Genre"/>
+		<br>
+		Type in rating detail:
+		<input type="text" name="Rating"/>
+		<br>
+		Type in year detail:
+		<input type="text" name="Year" />
+		<br>
+		<input type="submit" value="Search" >
+		</h2>
+	  </form>
+	</div>
+	<div>
+	<hr style=" float: left; width: 3px; height: 400px; background: #5A3E36; border: none; margin-right: 50px;" />
+	</div>
+	<div style = "float:left; width: 200px;">
+	  <h2>
+	      <!--show all -->
+	  <form action="http://localhost/Project/ShowAll.php" method="post">
+		Click here to show all movies <br/>
+		<input type="submit" value="Show all user" >
+		
+	  </form>
+	      <!--top 10 most frequent search -->
+	  <hr style="width : 250px; height: 3px; background: #5A3E36; border: none;" />
+	  <form action="http://localhost/Project/FrequentSearch.php" method="post">
+		Click here to see the frequent search <br/>
+		<input type="submit" value="FrequentSearch" >
+	  </form>
+	  </h2>
+	</div>
+</div>
+	<div style="clear:both;">&nbsp;</div>
+	&nbsp;
+		
+ <!--copyright-->
+	<h6><a href="https://www.w3schools.com/html/">Copyright</a></h6>
+	</body>
+</html>
