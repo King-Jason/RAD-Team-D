@@ -13,6 +13,15 @@ Jason King
 Christina Tatang
 Kyle Cleofe
 
+# Analysis and Setup
+1. Source Control: GitHub or similar,
+2. Project Management Plan (Gantt chart, etc),
+3. Software Development Testing Plan (validation plan used during the software development),
+4. Analysis documentation
+ CITE business rules for software development,
+ CITE Managed Services Quality Assurance,
+ Acme Entertainment Pty Ltd development requirements,
+
 # Sprint One
 1. Source Control snapshot
 2. Project Management Plan for Sprint One
