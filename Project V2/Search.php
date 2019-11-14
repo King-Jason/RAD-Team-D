@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<!--
-Name: Christina Tatang
-ID: 30003663
-DoB: 02/08/2000
-Web Programming - Project 
--->
-
+<html>
 <head>
-<title>Search Movie</title>
-<!-- reference css file-->
-<link rel = "stylesheet" type="text/css" href="Project.css"/>
-<meta charset ="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type="text/css" href="Responsive.css"/>
+<style>
 
+</style>
 </head>
 <body>
-<!-- page title-->
-<h1>SMT Movies Rental</h1>
+    <header>
+        <h1>Welcome to my Movies Rental page</h1>
+    </header>
 
-<div id = "menu">
-<ul>
-    <!--reference for sub page -->
-    <li><a href="http://localhost/Project/index.htm"><table><tr><td>Home</td></tr></table></a></li> 
-    <li><a href="http://localhost/Project/myAbout.htm"><table><tr><td>About</td></tr></table></a></li> 
-    <li><a href="http://localhost/Project/myContact.htm"><table><tr><td>Contact</td></tr></table></a></li> 
-    <li><a href="http://localhost/Project/myHelp.htm"><table><tr><td>Help</td></tr></table></a></li> 
-</ul>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="myAbout.html">About</a>
+  <a href="myContact.html">Contact</a>
+  <a href="myHelp.html">Help</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
-    <div style="clear:both;">&nbsp;</div>
-<!--php code--> 
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 <?php
 //reference css file
-echo "<link rel = 'stylesheet' type='text/css' href='Project.css'/> <meta charset ='utf-8'/>";
 
 $Search = $_POST['Search'];
 $Genre = $_POST['Genre'];
@@ -162,9 +167,5 @@ catch(PDOException $e)
 $conn = null;
     echo "</table><br>";
 ?>
-
-&nbsp;
-&nbsp;
-<h6><a href="https://www.w3schools.com/html/">Copyright</a></h6>
 </body>
 </html>
