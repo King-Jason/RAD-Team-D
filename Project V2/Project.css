@@ -1,4 +1,8 @@
 /*
+Version 1 : Original Document : Christina Tatang
+Version 2.1: Made website responsive : Jason King
+*/
+/*
 Name: Christina Tatang
 ID: 30003663
 DoB: 02/08/2000
@@ -189,7 +193,9 @@ h6{
   .topnav .icon {
     display: none;
   }
-  
+  /*
+  Jason King P465642 14/11/2019
+  */
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -211,3 +217,6 @@ h6{
       text-align: left;
     }
   }
+  /*
+  Jason King P465642 14/11/2019
+  */

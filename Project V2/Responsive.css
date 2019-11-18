@@ -1,3 +1,7 @@
+/*
+Version 1 : Original Document : Christina Tatang
+Version 2.1: Made website responsive : Jason King
+*/
 body {
     margin: 0;
     font-family: sans-serif;
@@ -32,6 +36,9 @@ body {
     display: none;
   }
   
+     /*
+  Jason King P465642 14/11/2019
+  */ 
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -71,3 +78,6 @@ h2
     color: #77212E;
     text-align: left;
 }
+  /*
+  Jason King P465642 14/11/2019
+  */

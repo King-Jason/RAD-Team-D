@@ -1,3 +1,7 @@
+<!--
+Version 1 : Original Document : Christina Tatang
+Version 2.1: Made website responsive : Jason King
+//-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +16,7 @@
     <header>
         <h1>Welcome to my Movies Rental page</h1>
     </header>
-
+<!--Jason King P465642 14/11/2019-->
 <div class="topnav" id="myTopnav">
   <a href="index.html" class="active">Home</a>
   <a href="myAbout.html">About</a>
@@ -34,6 +38,8 @@ function myFunction() {
   }
 }
 </script>
+
+<!----------------------------->
 <?php
 //reference css file
 
