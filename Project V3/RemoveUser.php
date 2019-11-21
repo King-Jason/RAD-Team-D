@@ -4,6 +4,8 @@ Version 1 : Original Document : Christina Tatang
 Version 2.1: Made website responsive : Jason King
 Version 3 : Made membership page and administrative functions : Christina Tatang
 //-->
+
+<!--php file to remove user from database-->
 <html>
 <head>
 <!--Reference for CSS Style & Responsive design-->
@@ -60,11 +62,11 @@ try
 	$stmt->execute();
 	$numRow = $stmt ->rowCount();
 
-	//if found
+	//if not found
 	if($numRow == 0){
 		echo "<h2>This user is not exists.</h2>";	
 	}
-	//if else delete the entire information using email address
+	//else delete the entire information using email address
 	else{
 		$sql = 'DELETE FROM `membership_subscription` WHERE `Email` = :Email';
     $stmt = $conn->prepare($sql);
