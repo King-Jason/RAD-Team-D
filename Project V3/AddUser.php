@@ -4,6 +4,8 @@ Version 1 : Original Document : Christina Tatang
 Version 2.1: Made website responsive : Jason King
 Version 3 : Made membership page and administrative functions : Christina Tatang
 //-->
+
+<!--php file to add a user to the database-->
 <html>
 <head>
 	<!--Reference for CSS Style & Responsive design-->
