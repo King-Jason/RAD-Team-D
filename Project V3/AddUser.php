@@ -102,10 +102,11 @@ Version 3 : Made membership page and administrative functions : Christina Tatang
 
 			$stmt->execute();
 			echo '<h2> The user has been added. </h2>';
-
+/*
 			$header = "From: christina2820@gmail.com";
 			$result =  mail($Email, "Movies Rental Subscription", "Thank you for your subscription");
 			var_dump($result);
+			*/
 		}
 	} catch ( PDOException $e ) {
 		echo 'ERROR: ' . $e->getMessage();
