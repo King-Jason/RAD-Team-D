@@ -73,10 +73,11 @@ try
 	
     $stmt->execute();
     echo '<h2> The user has been deleted. </h2>';
-		
+		/*
 		$header = "From: christina2820@gmail.com";
 			$result =  mail($Email, "Movies Rental Subscription", "We sad you remove us...");
 			var_dump($result);
+			*/
 	}
 	
 }
