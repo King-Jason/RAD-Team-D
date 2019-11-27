@@ -1,0 +1,88 @@
+<!--
+Version 1 : Original Document : Christina Tatang
+Version 2.1: Made website responsive : Jason King
+Version 3 : Made membership page and administrative functions : Christina Tatang
+//-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type="text/css" href="Responsive.css"/>
+<style>
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Movies Rental page</h1>
+    </header>
+<!--Jason King P465642 14/11/2019-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="myAbout.html">About</a>
+  <a href="myContact.html">Contact</a>
+  <a href="myHelp.html">Help</a>
+  <a href = "membership.html">Subscribe</a>
+  <a href="clientPage.php">Client</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!---------------------------->
+
+
+<!--Christina Tatang -->
+<div style = "width: 700px;" class="main">
+        <div style = "float: left; width: 400px; position: relative; margin-left: 20px; ">
+          <h2>
+              <!--search -->
+          <form action="Search.php" method="post">
+            Click here to add new user <br/>
+            Type in a movie detail:
+            <input type="text" name="Search" />
+            <br>
+            Type in genre detail:
+            <input type="text" name="Genre"/>
+            <br>
+            Type in rating detail:
+            <input type="text" name="Rating"/>
+            <br>
+            Type in year detail:
+            <input type="text" name="Year" />
+            <br>
+            <input type="submit" value="Search" />
+          </form>
+			
+          <form action="ShowAll.php" method="post">
+            Click here to show all movies <br/>
+            <input type="submit" value="Show all user" >
+          </form>
+          <form action="FrequentSearch.php" method="post">
+            Click here to see the frequent search <br/>
+            <input type="submit" value="FrequentSearch" >
+          </form>
+			</h2>
+        </div>
+        <div style="clear:both;"></div>
+
+            
+     <br>
+	<br>
+	<h6 style='margin-left:1.5em'>Copyright to Acme Entertainment Pty Ltd</h6>
+<!--------------->
+
+</body>
+</html>
