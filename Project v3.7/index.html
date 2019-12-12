@@ -1,0 +1,83 @@
+<!--
+Version 1 : Original Document : Christina Tatang
+Version 2.1: Made website responsive : Jason King
+Version 3 : Made membership page and administrative functions : Christina Tatang
+Version 3.1 Code convention fixes and UI experience.
+Version 3.2 Added tooltips so it follows WCAG
+//-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href="Responsive.css" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Welcome to my Movies Rental page</h1>
+		</header>
+		<!--Jason King P465642 14/11/2019-->
+		<div class="topnav" id="myTopnav">
+		  <a title = "Goes to home page" href="index.html" class="active">Home</a>
+		  <a title = "Goes to about page" href="myAbout.html">About</a>
+		  <a title = "Goes to contact page" href="myContact.html">Contact</a>
+		  <a title = "Goes to help page" href="myHelp.html">Help</a>
+		  <a title = "Goes to membership page" href = "membership.html">Subscribe</a>
+		  <a title = "Goes to client page" href="clientPage.php">Client</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
+		<!---------------------------->
+
+
+		<!--Christina Tatang -->
+		<div style = "float: left; width: 400px; position: relative; margin-left: 20px; ">
+			<h2 style='font-weight:400'>Search a movie <br></h2>
+			<h2>
+				<!--search -->
+				<form action="Search.php" method="post">
+					Movie title: 
+					<input type="text" name="Search" placeholder="Matrix 2"/>
+					<br>
+					Genre type:
+					<input type="text" name="Genre" placeholder="Action"/>
+					<br>
+					Rating:
+					<input type="text" name="Rating" placeholder="PG"/>
+					<br>
+					Year:
+					<input type="text" name="Year" placeholder="2004"/>
+					<br>
+					<input title = "Click to search movies" type="submit" value="Search" /><br><br>
+				</form>
+				
+				<form action="ShowAll.php" method="post">
+					Click here to show all movies <br/>
+					<input title = "Click to show all movies" type="submit" value="Show all movies" ><br><br>
+				</form>
+				
+				<form action="FrequentSearch.php" method="post">
+					Click here to see the frequent search <br/>
+					<input title = "Click to view the top 10 most searched movies" type="submit" value="Frequently Searched" >
+				</form>
+			</h2>
+		</div>
+		<div style="clear:both;"></div>
+		<br><br>
+		<h6 style='margin-left:1.5em'>Copyright to Acme Entertainment Pty Ltd</h6>
+		<!--------------->
+	</body>
+</html>
